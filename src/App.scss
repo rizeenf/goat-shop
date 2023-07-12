@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$bgColor: #fffdf1;
+$primaryColor: #dda15e;
+$secondaryColor: #fad8b1;
+$textColor: #283618;
+
+.App {
+  background-color: $bgColor;
+  color: $textColor;
+}
