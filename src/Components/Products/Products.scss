@@ -1,0 +1,33 @@
+$bgColor: #fffdf1;
+$primaryColor: #dda15e;
+$secondaryColor: #fad8b1;
+$textColor: #283618;
+
+.p-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondaryColor;
+}
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(108% + 1.3px);
+  height: 137px;
+}
+
+.wave .shape-fill {
+  fill: #ffffff;
+}

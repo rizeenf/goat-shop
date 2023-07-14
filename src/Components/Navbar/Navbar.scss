@@ -3,7 +3,7 @@ $primaryColor: #dda15e;
 $secondaryColor: #fad8b1;
 $textColor: #283618;
 
-.container {
+.n-container {
   width: 90%;
   height: 10vh;
   margin: 0 90px;
@@ -44,13 +44,14 @@ $textColor: #283618;
     }
 
     span:hover {
-      background-color: #f4f1de;
+      opacity: 0.7;
       border-radius: 5px;
       cursor: pointer;
     }
     .active {
       position: relative;
       display: flex;
+      opacity: 0.8;
     }
     .active::before {
       content: "";
@@ -59,6 +60,7 @@ $textColor: #283618;
       border-radius: 5px;
       background-color: $textColor;
       position: absolute;
+
       top: 0;
     }
   }
