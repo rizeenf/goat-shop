@@ -2,3 +2,93 @@ $bgColor: #fffdf1;
 $primaryColor: #dda15e;
 $secondaryColor: #fad8b1;
 $textColor: #283618;
+
+.f-container {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #fff;
+
+  .f-wrapper {
+    width: 90%;
+    height: 20svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    .top {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 20svh;
+
+      .socmed {
+        width: 80%;
+        height: 5svh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        img {
+          height: 50px;
+          width: 50px;
+        }
+      }
+      .fmenu {
+        height: 5svh;
+        width: 20%;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+        z-index: 2;
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      height: 5svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: normal;
+        z-index: 3;
+      }
+    }
+  }
+
+  .wavef {
+    position: absolute;
+    left: -10%;
+    bottom: 40%;
+    width: 120%;
+    line-height: 0;
+  }
+
+  .wavef svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 260px;
+    transform: rotateY(180deg);
+  }
+
+  .wavef .shape-fill {
+    fill: #fad8b1;
+  }
+}

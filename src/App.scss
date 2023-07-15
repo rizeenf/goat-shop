@@ -13,4 +13,5 @@ $textColor: #283618;
 .App {
   background-color: $bgColor;
   color: $textColor;
+  overflow-x: hidden;
 }

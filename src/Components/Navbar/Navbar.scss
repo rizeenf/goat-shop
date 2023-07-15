@@ -44,9 +44,8 @@ $textColor: #283618;
     }
 
     span:hover {
-      opacity: 0.7;
-      border-radius: 5px;
       cursor: pointer;
+      color: $primaryColor;
     }
     .active {
       position: relative;

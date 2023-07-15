@@ -5,30 +5,71 @@ $textColor: #283618;
 
 .p-container {
   width: 100%;
-  height: 100vh;
+  height: 70svh;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  background-color: $secondaryColor;
-  position: absolute;
-}
-.wave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.wave svg {
+  background-color: #fad8b1;
   position: relative;
-  display: block;
-  width: calc(108% + 1.3px);
-  height: 137px;
-}
 
-.wave .shape-fill {
-  fill: #ffffff;
+  .wrapper {
+    width: 90%;
+    height: min-content;
+
+    .available {
+      h2 {
+        height: 20px;
+        margin-top: 50px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .marketplace {
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .tokped {
+          width: 219px;
+          height: 49px;
+        }
+        .shopee {
+          width: 217px;
+          height: 58px;
+        }
+        .bukalapak {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          width: 215px;
+          height: 38px;
+        }
+        .lazada {
+          width: 216px;
+          height: 65px;
+        }
+      }
+    }
+  }
+  .wavep {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .wavep svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 250px;
+  }
+
+  .wavep .shape-fill {
+    fill: #ffffff;
+  }
 }
