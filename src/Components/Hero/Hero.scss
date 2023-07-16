@@ -133,3 +133,9 @@ $textColor: #283618;
     }
   }
 }
+
+@media screen and (max-width: 912px) {
+  .right {
+    display: none;
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.scss";
 import Logo from "../../assets/Logo.svg";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
 const Navbar = () => {
   return (
@@ -10,6 +11,7 @@ const Navbar = () => {
           <img src={Logo} alt="" className="logo" />
           <h1 className="logoName">Goatify</h1>
         </div>
+        <BurgerMenu />
         <div className="listItem">
           <span className="active">Home</span>
           <span>Product</span>

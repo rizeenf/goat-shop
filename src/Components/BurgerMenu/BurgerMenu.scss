@@ -1,0 +1,115 @@
+$bgColor: #fffdf1;
+$primaryColor: #dda15e;
+$secondaryColor: #fad8b1;
+$textColor: #283618;
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  gap: 4px;
+  height: max-content;
+  width: max-content;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  cursor: pointer;
+}
+.burger input,
+.burger::after,
+.burger::before {
+  content: "";
+  width: 40px;
+  height: 8px;
+  background-color: $textColor;
+  border-radius: 90px;
+  transition: opacity 200ms ease-in-out, width 200ms ease-in-out;
+}
+
+.burger input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.burger:has(input:checked)::after {
+  opacity: 0.8;
+  background-color: #dda15e;
+}
+.burger:has(input:checked)::before {
+  width: 30%;
+  opacity: 0.8;
+  background-color: #dda15e;
+}
+
+.burger input:checked {
+  width: 50%;
+  opacity: 0.8;
+  background-color: #dda15e;
+}
+
+.listb {
+  animation: translate 200ms ease-in-out;
+  translate: -500%;
+  height: 300dvh;
+  display: flex;
+  justify-content: end;
+  overflow-x: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.listb nav {
+  padding-top: 50px;
+  max-width: 10rem;
+  min-height: 100dvh;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: white;
+
+  h4 {
+    width: max-content;
+    height: max-content;
+    padding: 10px 20px;
+  }
+}
+
+.burger:has(input:checked) + .listb {
+  translate: 0;
+}
+
+.buttonb {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+
+  button {
+    width: 100px;
+    height: 40px;
+    background-color: $primaryColor;
+    border: 1px solid #283618;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #283618;
+  }
+  button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+.bwrapper {
+  z-index: 10;
+}
+
+@media screen and (min-width: 912px) {
+  .bwrapper {
+    display: none;
+  }
+}
