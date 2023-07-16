@@ -92,3 +92,30 @@ $textColor: #283618;
     fill: #fad8b1;
   }
 }
+
+@media screen and (max-width: 912px) {
+  .f-container {
+    height: max-content;
+    .f-wrapper {
+      .top {
+        .socmed {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 3;
+          img {
+            height: 40px;
+            width: 40px;
+          }
+        }
+        .fmenu {
+          display: none;
+        }
+      }
+      .wavef {
+        width: 150%;
+        left: -40%;
+      }
+    }
+  }
+}

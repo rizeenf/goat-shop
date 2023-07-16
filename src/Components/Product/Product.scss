@@ -63,3 +63,19 @@ $textColor: #283618;
     flex: 1 1 55%;
   }
 }
+
+@media screen and (max-width: 912px) {
+  .cards {
+    .cards-item {
+      flex: 1 1 50%;
+      .detail {
+        h3 {
+          font-size: 20px;
+        }
+        h4 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

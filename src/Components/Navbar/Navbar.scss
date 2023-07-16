@@ -101,4 +101,23 @@ $textColor: #283618;
   .button {
     display: none !important;
   }
+
+  .line {
+    margin: 0 5%;
+  }
+
+  .logoInfo {
+    height: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 5px;
+  }
+  .logo {
+    height: 30px;
+    width: 30px;
+  }
+  .logoName {
+    font-size: 28px;
+  }
 }

@@ -73,3 +73,40 @@ $textColor: #283618;
     fill: #ffffff;
   }
 }
+
+@media screen and (max-width: 912px) {
+  .p-container {
+    height: max-content;
+    .wrapper {
+      .available {
+        h2 {
+          text-align: center;
+          font-size: 14px;
+        }
+        .marketplace {
+          display: flex;
+          gap: 5px;
+          .tokped {
+            height: 15px;
+            width: max-content;
+          }
+          .shopee {
+            height: 25px;
+            width: max-content;
+          }
+          .bukalapak {
+            width: max-content;
+            display: flex;
+            flex-direction: row;
+            gap: 2px;
+            height: 15px;
+          }
+          .lazada {
+            width: max-content;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
